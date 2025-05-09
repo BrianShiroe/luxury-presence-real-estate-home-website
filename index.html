@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Georgia&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-light">
+      <ul class="nav flex-column p-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="listings.html">LISTINGS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lets-move.html">LET'S MOVE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">ABOUT US</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="fade-in-on-scroll navbar">
+      <div class="container-fluid">
+        <button class="btn" id="sidebarToggle">&#9776;</button>
+      </div>
+    </nav>
+
+    <!-- Head -->
+    <header class="fade-in-on-scroll text-center py-4">
+      <img
+        src="assets/images/marci-metzger-head.webp"
+        alt="Marci Metzger Logo"
+        class="img-fluid"
+        style="max-height: 140px; height: auto"
+      />
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="fade-in-on-scroll heroSection bg-light text-dark text-center py-5"
+      style="
+        background-image: url('assets/images/background7.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      "
+    >
+      <div class="fade-in-on-scroll container">
+        <h3 class="fade-in-on-scroll text-white">MARCI METZGER - THE RIDGE REALTY GROUP</h3>
+        <h1 class="fade-in-on-scroll text-white">PAHRUMP REALTOR</h1>
+        <a href="#" class="fade-in-on-scroll btn btn-primary btn-lg" id="callNowBtn">Call Now</a>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section
+      class="fade-in-on-scroll profileSection bg-dark text-center py-5 pb-5"
+      style="background-color: black; height: 115vh"
+    >
+      <div class="fade-in-on-scroll container h-100 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="fade-in-on-scroll text-white">MARCI METZGER</h2>
+
+        <img
+          src="assets/images/profile.webp"
+          alt="Marci Metzger"
+          class="fade-in-on-scroll rounded-circle mb-5"
+          width="350"
+          height="350"
+        />
+
+        <h5 class="fade-in-on-scroll text-light mb-2">REALTOR FOR NEARLY 3</h5>
+        <h5 class="fade-in-on-scroll text-light mb-4">DECADES!</h5>
+
+        <h6 class="fade-in-on-scroll text-uppercase text-light">206-919-6886</h6>
+      </div>
+    </section>
+
+    <!-- Get it sold section -->
+    <section class="fade-in-on-scroll bg-light py-5">
+      <div class="fade-in-on-scroll container">
+        <h1 class="fade-in-on-scroll text-center mb-5">GET IT SOLD</h1>
+
+        <!-- Row 1 -->
+        <div class="fade-in-on-scroll row align-items-center mb-5">
+          <div class="fade-in-on-scroll col-md-6">
+            <img src="assets/images/1.webp" alt="Top Residential Sales" class="fade-in-on-scroll img-fluid rounded" />
+          </div>
+          <div class="fade-in-on-scroll col-md-6 text-center">
+            <h4>Top Residential Sales Last 5 Years</h4>
+            <p>We helped nearly 90 clients in 2021, and closed 28.5 million in sales!</p>
+            <p>
+              Our team works hard every day to grow and learn, so that we may continue to excel in our market. Our
+              clients deserve our best, & we want to make sure our best is better every year.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="fade-in-on-scroll row align-items-center mb-5 flex-md-row-reverse">
+          <div class="fade-in-on-scroll col-md-6">
+            <img src="assets/images/2.webp" alt="Get it SOLD" class="fade-in-on-scroll img-fluid rounded" />
+          </div>
+          <div class="fade-in-on-scroll col-md-6 text-center">
+            <h4>Don't Just List it... Get it SOLD!</h4>
+            <p>
+              We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you
+              top dollar for your home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="fade-in-on-scroll row align-items-center">
+          <div class="fade-in-on-scroll col-md-6">
+            <img src="assets/images/3.webp" alt="Guide to Buyers" class="fade-in-on-scroll img-fluid rounded" />
+          </div>
+          <div class="fade-in-on-scroll col-md-6 text-center">
+            <h4>Guide to Buyers</h4>
+            <p>
+              Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists,
+              contractors on speed dial, & more!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Listings Section -->
+    <section
+      class="fade-in-on-scroll py-5"
+      style="background: url('assets/images/14.jpg') center/cover no-repeat; height: 105vh"
+    >
+      <h2
+        class="fade-in-on-scroll dreamHomeHead text-center"
+        style="color: white; padding-bottom: 100px; font-family: 'Cinzel', 'Georgia', serif"
+      >
+        Find Your Dream Home
+      </h2>
+      <div class="fade-in-on-scroll container">
+        <div class="fade-in-on-scroll bg-white p-4 p-md-5 rounded shadow">
+          <h2 class="fade-in-on-scroll text-center mb-4" style="font-family: 'Georgia', serif; color: #8b5e5e">
+            SEARCH LISTINGS
+          </h2>
+          <form>
+            <div class="fade-in-on-scroll row g-3">
+              <div class="fade-in-on-scroll col-md-4">
+                <label class="fade-in-on-scroll form-label">Location</label>
+                <select class="fade-in-on-scroll form-select">
+                  <option>Any</option>
+                  <option>New York</option>
+                  <option>Los Angeles</option>
+                  <option>Chicago</option>
+                  <option>Miami</option>
+                </select>
+              </div>
+
+              <div class="fade-in-on-scroll col-md-4">
+                <label class="fade-in-on-scroll form-label">Type</label>
+                <select class="fade-in-on-scroll form-select">
+                  <option>Any</option>
+                  <option>Apartment</option>
+                  <option>House</option>
+                  <option>Condo</option>
+                  <option>Townhouse</option>
+                </select>
+              </div>
+
+              <div class="fade-in-on-scroll col-md-4">
+                <label class="fade-in-on-scroll form-label">Sort By</label>
+                <select class="fade-in-on-scroll form-select">
+                  <option value="">Select Sort Option</option>
+                  <option value="newest">Newest</option>
+                  <option value="oldest">Oldest</option>
+                  <option value="leastMostExpenside">Least to Most Expensive</option>
+                  <option value="mostLeastExpensive">Most to Least Expensive </option>
+                  <option value="bedroomsLowHigh">Bedrooms: Low to High</option>
+                  <option value="bedroomsHighLow">Bedrooms: High to Low</option>
+                  <option value="bathroomsLowHigh">Bathrooms: Low to High</option>
+                  <option value="bathroomsHighLow">Bathrooms: High to Low</option>
+                </select>
+              </div>
+
+              <div class="fade-in-on-scroll col-md-3">
+                <label class="fade-in-on-scroll form-label">Bedrooms</label>
+                <select class="fade-in-on-scroll form-select">
+                  <option>Any Number</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6+</option>
+                </select>
+              </div>
+
+              <div class="fade-in-on-scroll col-md-3">
+                <label class="fade-in-on-scroll form-label">Baths</label>
+                <select class="fade-in-on-scroll form-select">
+                  <option>Any Number</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6+</option>
+                </select>
+              </div>
+
+              <div class="fade-in-on-scroll col-md-3">
+                <label class="fade-in-on-scroll form-label">Min Price</label>
+                <input type="text" class="fade-in-on-scroll form-control" placeholder="$0" />
+              </div>
+
+              <div class="fade-in-on-scroll col-md-3">
+                <label class="fade-in-on-scroll form-label">Max Price</label>
+                <input type="text" class="fade-in-on-scroll form-control" placeholder="$0" />
+              </div>
+
+              <div class="fade-in-on-scroll col-12 text-center mt-3">
+                <button
+                  type="submit"
+                  class="fade-in-on-scroll btn btn-light px-5 py-2 rounded-pill border shadow-sm fw-bold"
+                >
+                  SEARCH NOW
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Affiliations / Logos Section -->
+    <section class="fade-in-on-scroll py-5 bg-white affiliations">
+      <div class="fade-in-on-scroll container" style="padding: 50px">
+        <div class="fade-in-on-scroll row justify-content-center align-items-center text-center g-4">
+          <div class="col-6 col-md-3 d-flex justify-content-center">
+            <img
+              src="assets/images/icon1.webp"
+              alt="The Ridge Realty Group"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+          <div class="col-6 col-md-3 d-flex justify-content-center">
+            <img
+              src="assets/images/icon2.webp"
+              alt="Equal Housing Opportunity"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+          <div class="col-6 col-md-3 d-flex justify-content-center">
+            <img src="assets/images/icon3.webp" alt="REALTOR" class="img-fluid" style="max-height: 100px" />
+          </div>
+          <div class="col-6 col-md-3 d-flex justify-content-center">
+            <img
+              src="assets/images/icon4.webp"
+              alt="Pahrump Valley Chamber of Commerce"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="fade-in-on-scroll bg-dark text-white py-5">
+      <div class="fade-in-on-scroll container text-center">
+        <h2 class="fade-in-on-scroll mb-4 text-uppercase" style="font-family: serif">Photo Gallery</h2>
+        <div class="fade-in-on-scroll row justify-content-center">
+          <div class="fade-in-on-scroll col-lg-10">
+            <!-- Main Preview Image -->
+            <img
+              id="mainGalleryImage"
+              src="assets/images/5.webp"
+              class="fade-in-on-scroll img-fluid mb-4 rounded shadow"
+              alt="Gallery"
+            />
+
+            <!-- Thumbnail Images -->
+            <div class="fade-in-on-scroll d-flex justify-content-center flex-wrap gap-4">
+              <img
+                src="assets/images/5.webp"
+                class="img-thumbnail gallery-thumb"
+                style="width: 100px; cursor: pointer"
+                onclick="document.getElementById('mainGalleryImage').src=this.src"
+              />
+              <img
+                src="assets/images/6.webp"
+                class="img-thumbnail gallery-thumb"
+                style="width: 100px; cursor: pointer"
+                onclick="document.getElementById('mainGalleryImage').src=this.src"
+              />
+              <img
+                src="assets/images/7.webp"
+                class="img-thumbnail gallery-thumb"
+                style="width: 100px; cursor: pointer"
+                onclick="document.getElementById('mainGalleryImage').src=this.src"
+              />
+              <img
+                src="assets/images/8.webp"
+                class="img-thumbnail gallery-thumb"
+                style="width: 100px; cursor: pointer"
+                onclick="document.getElementById('mainGalleryImage').src=this.src"
+              />
+              <img
+                src="assets/images/9.webp"
+                class="img-thumbnail gallery-thumb"
+                style="width: 100px; cursor: pointer"
+                onclick="document.getElementById('mainGalleryImage').src=this.src"
+              />
+              <img
+                src="assets/images/10.webp"
+                class="img-thumbnail gallery-thumb"
+                style="width: 100px; cursor: pointer"
+                onclick="document.getElementById('mainGalleryImage').src=this.src"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fade-in-on-scroll container my-5">
+      <h1 class="fade-in-on-scroll text-center mb-5 text-muted font-weight-light">Our Services</h1>
+
+      <div class="fade-in-on-scroll row">
+        <!-- Column 1 -->
+        <div class="fade-in-on-scroll col-md-4 mb-4">
+          <div class="fade-in-on-scroll card border-light shadow-sm h-100">
+            <img src="assets/images/11.webp" class="fade-in-on-scroll card-img-top img-fluid mb-3" alt="Real Estate" />
+            <div class="fade-in-on-scroll card-body">
+              <h4 class="fade-in-on-scroll card-title font-weight-bold text-muted">Real Estate Done Right</h4>
+              <p class="fade-in-on-scroll card-text small text-muted">
+                Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your
+                residence, looking at investment properties, or just curious about the markets, our team ensures you get
+                the best experience possible!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="fade-in-on-scroll col-md-4 mb-4">
+          <div class="fade-in-on-scroll card border-light shadow-sm h-100">
+            <img
+              src="assets/images/12.webp"
+              class="fade-in-on-scroll card-img-top img-fluid mb-3"
+              alt="Commercial & Residential"
+            />
+            <div class="fade-in-on-scroll card-body">
+              <h4 class="fade-in-on-scroll card-title font-weight-bold text-muted">Commercial & Residential</h4>
+              <p class="fade-in-on-scroll card-text small text-muted">
+                Large or small, condo or mansion, we can find it and get it at the price that's right. Fixer-uppers?
+                Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find
+                where to put your hard-earned dollars.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="fade-in-on-scroll col-md-4 mb-4">
+          <div class="fade-in-on-scroll card border-light shadow-sm h-100">
+            <img src="assets/images/13.webp" class="fade-in-on-scroll card-img-top img-fluid mb-3" alt="Expertise" />
+            <div class="fade-in-on-scroll card-body">
+              <h4 class="fade-in-on-scroll card-title font-weight-bold text-muted">Rely on Expertise</h4>
+              <p class="fade-in-on-scroll card-text small text-muted">
+                If you have questions about affordability, credit, and loan options, trust us to connect you with the
+                right people to get the answers you need in a timely fashion. We make sure you feel confident and
+                educated every step of the way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- socials section -->
+    <section class="fade-in-on-scroll bg-dark text-white py-4">
+      <div class="fade-in-on-scroll container">
+        <div class="fade-in-on-scroll row justify-content-center">
+          <div class="fade-in-on-scroll col-12 text-center">
+            <div class="social-icons d-flex justify-content-center gap-4 flex-wrap">
+              <!-- Facebook Icon -->
+              <a href="https://www.facebook.com/MarciHomes/" target="_blank" class="text-white">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <!-- Instagram Icon -->
+              <a href="https://www.instagram.com/marciandlauren_nvrealtors/" target="_blank" class="text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <!-- LinkedIn Icon -->
+              <a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" class="text-white">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <!-- Yelp Icon -->
+              <a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank" class="text-white">
+                <i class="fab fa-yelp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fade-in-on-scroll call-or-visit py-5 bg-light">
+      <div class="fade-in-on-scroll container" style="padding: 20px">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h3 class="display-5 font-weight-light text-muted" style="margin-bottom: 80px">Call or Visit</h3>
+          </div>
+        </div>
+
+        <div class="fade-in-on-scroll row">
+          <!-- Send Message Column -->
+          <div class="fade-in-on-scroll col-md-6 mb-4">
+            <div class="fade-in-on-scroll card h-100 border-light shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title font-weight-bold text-muted">Send a Message</h3>
+                <form>
+                  <div class="form-group mb-3">
+                    <label for="name" class="small text-muted">Your Name</label>
+                    <input type="text" class="form-control form-control-sm" id="name" />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="email" class="small text-muted">Email*</label>
+                    <input type="email" class="form-control form-control-sm" id="email" required />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="message" class="small text-muted">Message</label>
+                    <textarea class="form-control form-control-sm" id="message" rows="3"></textarea>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-light px-4 py-2 rounded-pill border shadow-sm fw-bold">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Column -->
+          <div class="fade-in-on-scroll col-md-6 mb-4">
+            <div class="fade-in-on-scroll card h-100 border-light shadow-sm bg-white">
+              <div class="fade-in-on-scroll card-body">
+                <!-- WhatsApp Message Button with Icon -->
+                <a
+                  href="https://wa.me/12069196886"
+                  class="btn whatsAppBtn rounded-pill text-dark font-weight-bold mb-4 w-50 mx-auto d-block py-2"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i>
+                  <!-- WhatsApp Icon -->
+                  Message us on WhatsApp
+                </a>
+
+                <!-- Real Estate Group Title -->
+                <h4 class="h5 mt-4 text-muted">Marcí Metzger - THE RIDGE REALTY GROUP</h4>
+
+                <!-- Address -->
+                <address class="mb-4 text-muted">
+                  3190 HW-160, Suite F, Pahrump, Nevada 89048, United States<br />
+                  <a href="tel:2069196886" class="text-dark">(206) 919-6886</a>
+                </address>
+
+                <!-- Office Hours -->
+                <h5 class="h6 text-muted">Office Hours</h5>
+                <p class="text-success">Monday – Sunday: 08:00 am – 07:00 pm ✔</p>
+
+                <!-- Divider -->
+                <hr class="my-4" style="border-top: 1px solid #e0e0e0" />
+
+                <!-- Additional Info -->
+                <p class="small text-muted">Appointments outside office hours are available upon request. Just call!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fade-in-on-scroll container-fluid bg py-5 text-white" style="background-color: grey">
+      <div class="fade-in-on-scroll container">
+        <h2 class="text-center mb-4">Find Us Here</h2>
+        <div class="map-container mx-auto" style="max-width: 1200px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25763.01316321887!2d-115.96110041952502!3d36.18172076161488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c6398c31855555%3A0xca2c250302350734!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!5e0!3m2!1sen!2sph!4v1746780347971!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fade-in-on-scroll bg-dark text-white text-center py-5" style="position: relative">
+      <!-- Social Media Icons -->
+      <div class="mb-3">
+        <a href="https://www.facebook.com/yourpage" class="text-white mx-2" target="_blank" rel="noopener">
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/yourprofile" class="text-white mx-2" target="_blank" rel="noopener">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourprofile" class="text-white mx-2" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://www.yelp.com/biz/yourbusiness" class="text-white mx-2" target="_blank" rel="noopener">
+          <i class="fab fa-yelp fa-lg"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="mb-0">Copyright &copy; 2023 Marci METZGER Homes - All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
