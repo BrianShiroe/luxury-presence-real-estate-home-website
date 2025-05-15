@@ -1,6 +1,6 @@
-# 🏡 Luxury Presence Real Estate Home Website Template
+# 🏡 Real Estate Home Website Template
 
-This is a **real estate website template** I built as part of an assessment for **Luxury Presence**. It features a sleek and modern layout tailored for showcasing high-end properties.
+This is a **real estate website template**. It features a sleek and modern layout tailored for showcasing high-end properties.
 
 You are **free to use this as a template** for your own real estate website. Modify it however you like — no attribution required (but always appreciated)!
 
